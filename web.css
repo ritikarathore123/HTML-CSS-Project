@@ -1,0 +1,489 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding: 6rem;
+    /* overflow: hidden; */
+}
+/* header tag css */
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    background-color: white;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0.5rem 1rem rgb(0, 0, 0, 0.1) ;
+}
+ /* header logo */
+
+ header .logo{
+    font-size: 6rem;
+    color: #333;
+    font-weight: 100;
+    font-family:Dancing Script ;
+ }
+
+ header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666;
+    text-decoration: none;
+ }
+
+ header .navbar a:hover{
+   color:#fdc5f5;
+   font-weight: 500;
+ }
+ /* hreader navbar icon*/
+ header .icons a{
+    font-size:3rem;
+    color: #333;
+    margin-left: 1.5rem;
+    
+ }
+
+ header .icons a:hover{
+  
+    color:hotpink;
+ 
+    
+ }
+
+ header #check1{
+   display: none; 
+ }
+
+ header .fa-bars{
+    font-size: 30px;
+    color: #333;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+ }
+
+section{
+   padding: 2rem 9%;
+}
+
+.home{
+   display: flex;
+   align-items: center;
+   min-height: 100vh;
+   background-repeat: no-repeat;
+   background-image:url(https://png.pngtree.com/background/20230516/original/pngtree-teddy-bear-in-a-dark-room-showing-its-tie-picture-image_2612273.jpg);
+   background-size: cover;
+  
+ 
+   
+}
+
+.home .content{
+   max-width: 50rem;
+}
+
+.home .content h3{
+   font-size: 6rem;
+   color: whitesmoke;
+ font-family: Teko;
+}
+
+.home .content span{
+   font-size: 3rem;
+   color: whitesmoke;
+   padding: 2rem 0;
+   line-height: 1.5;
+   font-family:Dancing Script;
+}
+.home .content p{
+   font-size: 1.5rem;
+   color: whitesmoke;
+   padding: 2rem 0;
+   line-height: 1.5;
+}
+
+.button{
+   display: inline-block;
+   margin-top: 1rem;
+   color: whitesmoke;
+   background-color: #666;
+   padding: 0.9rem 3.5rem;
+   border-radius: 3rem;
+   font-size: 1.7rem;
+   font-weight: 600;
+   cursor: pointer;
+}
+
+.button:hover{
+   background-color: burlywood;
+}
+
+.heading{
+   color: brown;
+   text-align: center;
+   font-size: 4rem;
+   padding: 1rem;
+   margin: 2rem 0;
+   background-color: rgb(254, 221, 173);
+}
+
+.About{
+   background-color: bisque;
+
+}
+.About .row{
+   display: flex;
+   align-items: center;
+   gap:2rem;
+   flex-wrap: wrap;
+   padding: 2rem 0;
+   padding-bottom: 3rem ;
+}
+
+.About .row .video_container{
+   flex: 1 1 40rem;
+   position: relative;
+}
+
+.About .row .video_container video{
+  width: 100%;
+  height: 100%;
+  box-shadow:0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+.About .row .video_container h3{
+  position: absolute;
+  top: 50%;
+  transform:translateY(-50%);
+  font-size:3rem;
+  background-color: #fff;
+  width: 100%;
+  padding: 1rem 2rem;
+  text-align: center;
+  mix-blend-mode: screen;
+}
+
+.About .row .content{
+   flex: 1 1 40rem;
+}
+
+.About .row .content h3{
+   font-size: 3rem;
+   color: #333;
+}
+
+.About .row .content p{
+   font-size: 1.5rem;
+   color: #999;
+   padding: 0.5rem 0;
+   padding-top: 1rem;
+   line-height: 1.5;
+}
+
+.icon_container{
+   background-color:rgb(254, 221, 173);
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1.5rem;
+   padding-top: 5rem;
+   padding-bottom:5rem;
+}
+
+.icon_container .icons{
+  background-color: #fff;
+  border: 0.1rem solid rgb(0, 0, 0, 0.1);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  flex: 1 1 25rem;
+}
+
+.icon_container .icons i{
+   font-size: 5rem;
+   margin-right: 2rem;
+   color: #333;
+}
+
+.icon_container .icons h3{
+   color: #333;
+   font-size: 1.5rem;
+   padding-bottom:0.5rem;
+}
+
+.icon_container .icons span{
+   color: #555;
+   font-size: 1.3rem;
+
+}
+.products .card_container{
+   display: flex;
+   justify-content: space-between; /* Adjusts space between boxes */
+   gap: 20px; /* Optional gap between boxes */
+    flex-wrap: wrap; /* Allows wrapping if the screen is small */
+}
+
+     /* Styling for each product box */
+     .card{
+
+      width: 30%;
+      max-width: 250px;
+      box-sizing: border-box;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      background-color: #ffffff;
+      padding: 15px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+
+
+}
+/* Ensures images are the same size */
+.card_img {
+   width: 100%;
+   height: 200px; /* Adjust height as needed */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   overflow: hidden;
+   border-radius: 10px;
+}
+
+.card:hover {
+   transform: translateY(-5px);
+   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Image hover effect */
+.card_img img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 10px;
+   transition: transform 0.3s ease-in-out;
+}
+
+/* Zoom-in effect on hover */
+.card_img:hover img {
+   transform: scale(1.1);
+}
+
+
+.card_img img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover; /* Ensures images fit properly */
+   border-radius: 10px;
+}
+
+/* Styling for discount label */
+/*.products .card_container .card .discount {
+   background-color:black;
+   color: white;
+   font-size: 14px;
+   font-weight: bold;
+   padding: 0.7rem 1rem;
+   position: absolute;
+   top: 1rem;
+   left: 1rem;
+   border-radius: 5px;
+}*/
+
+/* Button and icons */
+.icons {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 10px;
+}
+
+.card_btn {
+   background-color: #ff4500;
+   color: white;
+   text-decoration: none;
+   padding: 8px 12px;
+   border-radius: 5px;
+   transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.card_btn:hover {
+   background-color: #e63e00;
+   transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+/*.choclate{
+background-color: rgb(254, 221, 173);
+min-height: 100vh;
+background-repeat: no-repeat;
+background-size: cover;
+padding: 50px;
+width: 100%;
+height: 100%;
+}
+
+.choclate h3{
+   text-align: left;
+   color: #fff;
+
+}*/
+
+/*.content1{
+  
+   background-image: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI1LTAxL3Jhd3BpeGVsb2ZmaWNlMV9waG90b19vZl9taW5pbWFsaXN0X2JlaWdlX3Byb2R1Y3RfYmFja2Ryb3BfYmVpZ184MTFlZjUzNC1mZTY1LTQ0MTAtYjc3NS0xYjYzYzVhMzZhZDlfMS5qcGc.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    background-size: cover;
+   padding: 100px;
+  
+
+}
+
+.content1 h1{
+   font-size: 70px;
+}*/
+
+
+.content1 {
+   background-image: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI1LTAxL3Jhd3BpeGVsb2ZmaWNlMV9waG90b19vZl9taW5pbWFsaXN0X2JlaWdlX3Byb2R1Y3RfYmFja2Ryb3BfYmVpZ184MTFlZjUzNC1mZTY1LTQ0MTAtYjc3NS0xYjYzYzVhMzZhZDlfMS5qcGc.jpg);
+   background-repeat: no-repeat;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   background-size: cover;
+   padding: 100px;
+  text-align: center;
+
+}
+
+.content1 h1 {
+   font-size: 70px;
+   margin-bottom: 20px;
+}
+
+/* Styling for the form */
+.contact-form {
+   display: flex;
+   flex-direction: column;
+   /* background: rgba(0, 0, 0, 0.6); */
+   padding: 20px;
+ 
+   border-radius: 15px;
+   width: 300px;
+}
+
+.contact-form label {
+   margin-top: 10px;
+   font-size: 18px;
+   text-align: left;
+   color: white;
+}
+
+.contact-form input {
+   padding: 10px;
+   margin-top: 5px;
+   border:1px solid black;
+   border-radius: 10px;
+}
+
+.contact-form button {
+   margin-top: 15px;
+   padding: 10px;
+   background: #ff9800;
+   color: white;
+   border: none;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+.contact-form button:hover {
+   background: #e68900;
+}
+
+
+section{
+   padding: 2rem 9%;
+}
+
+.pro1{
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   min-height: 100vh;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-image: url("images/WhatsApp%20Image%202025-04-22%20at%2000.23.03_1d142208.jpg");
+   background-size: cover;
+   padding-right: 5%;
+ 
+   
+}
+
+.pro1 .con1{
+   max-width: 50rem;
+   text-align: right;
+}
+
+.pro1 .con1 h3{
+   font-size: 6rem;
+   color: rgb(22, 21, 21);
+ font-family: Teko;
+}
+
+.pro1 .con1 span{
+   font-size: 3rem;
+   color: rgb(12, 11, 11);
+   padding: 2rem 0;
+   line-height: 1.5;
+   font-family:Dancing Script;
+}
+.pro1 .con1 p{
+   font-size: 1.5rem;
+   color: black;
+   padding: 2rem 0;
+   line-height: 1.5;
+}
+
+.button{
+   display: inline-block;
+   margin-top: 1rem;
+   color: whitesmoke;
+   background-color: #666;
+   padding: 0.9rem 3.5rem;
+   border-radius: 3rem;
+   font-size: 1.7rem;
+   font-weight: 600;
+   cursor: pointer;
+}
+
+.button:hover{
+   background-color: burlywood;
+}
+
+.t1{
+   text-decoration: none;
+}
